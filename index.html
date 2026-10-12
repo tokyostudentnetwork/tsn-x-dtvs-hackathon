@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<section><div class="container"> <!-- Top Banner -->
+<section id="top-banner"><div class="container"> <!-- Top Banner -->
     <h1>IDEATION TO SOLUTIONS</h1>
     <p>This is a collaborative event where participants come together to innovate and create solutions.</p>
     <p>A Free Student Hackathon By</p>
@@ -16,54 +16,93 @@
       <li>Tokyo Student Network</li>
       <li>Deloitte Tohmatsu Venture Support</li>
     </ul>
-    <button type="button" onclick="alert('Test')">Register Now!</button>
+    <a id="register-button" href="https://www.example.com" target="_blank">Register Now</a>
   </div></section>
 
-<section><div class="container"> <!-- Logos ETC -->
+<section class="type-white" id="logo-carousel"><div class="container"> <!-- Logos ETC -->
       <h2>In Partnership With</h2>
       <p>LOGOS TO GO HERE</p> <!-- Add logos of partner organizations here, In a moving carousel -->
     </div></section>
 
-<section><div class="container"> <!-- Fluff Info Section -->
+<section class="type-white" id="fluff-info"><div class="container"> <!-- Fluff Info Section -->
       <h2>Real Problems, Real Solutions</h2>
         <p>Put About Info Here</p>
     </div></section>
 
-<section><div class="container"> <!-- Who Should Attend? Section -->
+<section class="type-white" id="who-should-attend"><div class="container"> <!-- Who Should Attend? Section -->
       <h2>Who Should Attend?</h2>
       <p>This hackathon is open to all students interested in innovation and problem-solving. Other placeholder text etc.</p>
 </div></section>
 
-<section><div class="container"> <!-- Challenge Case Section -->
+<section class="type-grey" id="challenge-cases"><div class="container"> <!-- Challenge Case Section -->
       <h2>Challenge Cases</h2>
       <p>Table of challenge cases will be displayed here. TODO</p>
     </div></section>
 
-<section><div class="container"> <!-- Schedule Section -->
+<section class="type-white" id="schedule"><div class="container"> <!-- Schedule Section -->
       <h2>Schedule</h2>
-      <p>Details about the hackathon schedule will be provided here. TODO</p>
+      <div id="day-selection"> <!-- Day Selection Buttons. Will impliment later -->
+        <button class="day-button" data-day="1" >Day 1</button>
+        <button class="day-button" data-day="2">Day 2</button>
+      </div>
+      <div id="schedule-tables"> <!-- Schedule Tables - Both are to be in HTML and to be done later -->
+        <table id="day-1-schedule" class="schedule-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09:00 - 10:00</td>
+              <td>Opening Ceremony</td>
+              <td>Welcome and introduction to the hackathon.</td>
+            </tr>
+            <!-- Add more events for Day 1 -->
+          </tbody>
+        </table>
+
+        <table id="day-2-schedule" class="schedule-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09:00 - 10:00</td>
+              <td>Final Presentations</td>
+              <td>Teams present their solutions to the judges.</td>
+            </tr>
+            <!-- Add more events for Day 2 -->
+          </tbody>
+        </table></div>
     </div></section>
 
-<section><div class="container"> <!-- Sponsor Info Section -->
+<section class="type-grey" id="sponsors"><div class="container"> <!-- Sponsor Info Section -->
       <h2>Sponsors</h2>
       <p>Information about our sponsors will be provided here. TODO</p> <!-- Add sponsor logos and links here in a list with logos and links -->
     </div></section>
 
-<section><div class="container"> <!-- Organizers Info Section --> <!-- Add organizer logos and links here in a list with logos and links -->
+<section class="type-grey" id="organizers"><div class="container"> <!-- Organizers Info Section --> <!-- Add organizer logos and links here in a list with logos and links -->
       <h2>Organizers</h2>
       <p>Information about our organizers will be provided here. TODO</p>
     </div></section>
 
-<section><div class="container"> <!-- Partner Info Section -->
+<section class="type-grey" id="partners"><div class="container"> <!-- Partner Info Section -->
       <h2>Partners</h2>
       <p>Information about our partners will be provided here. TODO</p> <!-- Add partner logos and links here in a list with logos and links -->
     </div></section>
 
-<footer><div class="container"> <!-- Footer Section -->
+<footer id="footer-banner"><div class="container"> <!-- Footer Section -->
     <p>&copy; 2026 Tokyo Student Network. All rights reserved.</p>
-    <a href="https://www.instagram.com/tokyostudentnetwork/" target="_blank"><img src="images/instagram.svg" width="40" height="40" alt="Instagram"></a> |
-    <a href="https://www.linkedin.com/company/tokyostudentnetwork/" target="_blank"><img src="images/linkedin.svg" width="40" height="40" alt="LinkedIn"></a> |
-    <a href="mailto:info@tokyostudentnetwork.com" target="_blank"><img src="images/email.svg" width="40" height="40" alt="Email"></a>
+    <div id="social-media-links"><a href="https://www.instagram.com/tokyostudentnetwork/" target="_blank"><img src="images/instagram.svg" width="40" height="40" alt="Instagram"></a>
+    <a href="https://www.linkedin.com/company/tokyostudentnetwork/" target="_blank"><img src="images/linkedin.svg" width="40" height="40" alt="LinkedIn"></a>
+    <a href="mailto:info@tokyostudentnetwork.com"><img src="images/email.svg" width="40" height="40" alt="Email"></a></div>
   </div></footer>
   <script src="script.js"></script>
 </body> 
