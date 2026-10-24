@@ -113,6 +113,55 @@ ul.hero {
 /* ================================= */
 
 
+/* Info and Image Box Styles */
+.info-and-image-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+.info-and-image-box-content {
+  flex: 1;
+}
+.info-and-image-box + .info-and-image-box {
+  border-top: 1px solid color-mix(in srgb, var(--text-color) 15%, transparent);
+  margin-top: 24px;
+  padding-top: 24px;
+  margin-bottom: 8px;
+}
+.third-party-logo {
+  max-width: 144px;
+  height: 144px;
+}
+.bad-logo {
+  border: var(--text-color) solid 2px;
+}
+.org-button {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 1.2em;
+  text-decoration: none;
+  max-width: fit-content;
+}
+.org-button:hover  a:hover {
+  opacity: 0.65;
+  transition: opacity 0.3s ease-in-out;
+}
+.org-button:focus-visible {
+  outline: 2px solid #ff0808;
+}
+
+.article-partners {
+  margin-bottom: 40px;
+}
+/* ================================= */
+
+
 /* Footer Styles */
 footer {
   background-color: var(--primary-color);
