@@ -131,6 +131,9 @@ ul.hero {
   padding-top: 24px;
   margin-bottom: 8px;
 }
+.article-organizers {
+  padding-bottom: 16px;
+}
 .third-party-logo {
   max-width: 144px;
   height: 144px;
