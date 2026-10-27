@@ -159,14 +159,14 @@ div.hero .hero-logo-icon {
   padding: 12px 24px;
   font-size: 1.4em;
   text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: inline-block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
 }
 
 .register-button:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   opacity: 0.85;
-  transition: opacity 0.3s ease-in-out;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .register-button:focus-visible {
@@ -278,7 +278,7 @@ footer .container {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  div.hero .hero-logo-icon .register-button {
+  .register-button {
     transition: none;
   }
 }
