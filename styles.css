@@ -90,8 +90,7 @@ div.hero {
 
 div.hero h1 {
   color: var(--primary-color);
-  text-transform: uppercase;
-  font-size: 4em;
+  font-size: 4.5em;
   margin-bottom: 20px;
 }
 
@@ -110,12 +109,12 @@ div.hero .hero-logo-space {
   margin-bottom: 20px;
   align-items: center;
   width: 100%;
-  max-width: 900px; 
+  max-width: 600px; 
 }
 
 div.hero .hero-logo-icon {
   flex: 1;
-  padding: 30px;
+  padding: 16px;
   background-color: white;
   border-radius: 24px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -207,6 +206,7 @@ div.hero .hero-logo-icon {
 }
 
 .bad-logo {
+  border-radius: 16px;
   border: var(--text-color) solid 2px;
 }
 
