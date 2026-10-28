@@ -20,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   font: 1em Inter, sans-serif;
+  scroll-behavior: smooth;
 }
 
 img,
@@ -138,7 +139,7 @@ div.hero p {
   margin-bottom: 3px;
 }
 
-div.hero-logo-icon
+.hero-logo-icon
 {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -188,6 +189,17 @@ div.hero .hero-logo-icon {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  scroll-margin-top: 68px;
+  scroll-margin-bottom: 16px;
+  border-radius: 26px;
+}
+
+.info-and-image-box-target {
+  border-radius: 8px;
+}
+
+.info-and-image-box-target:target {
+  animation: info-highlight 5s ease-out;
 }
 
 .info-and-image-box-content {
@@ -235,8 +247,8 @@ div.hero .hero-logo-icon {
   outline: 2px solid #ff0808;
 }
 
-.article-partners {
-  margin-bottom: 40px;
+div.article-organizers {
+  margin-bottom: 48px;
 }
 
 /* ================================= */
@@ -294,6 +306,17 @@ footer .container {
   }
   .logo-card {
     flex-basis: 100%;
+  }
+}
+
+@keyframes info-highlight {
+  0%, 40% {
+    background-color: color-mix(in srgb, var(--primary-color) 40%, transparent);
+    box-shadow: 0 0 0 12px color-mix(in srgb, var(--primary-color) 40%, transparent);
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 0 12px transparent;
   }
 }
 /* ================================= */
