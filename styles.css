@@ -213,10 +213,6 @@ div.hero .hero-logo-icon {
   margin-bottom: 8px;
 }
 
-.article-organizers {
-  padding-bottom: 16px;
-}
-
 .third-party-logo {
   max-width: 144px;
   height: 144px;
@@ -248,7 +244,7 @@ div.hero .hero-logo-icon {
 }
 
 div.article-organizers {
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 /* ================================= */
