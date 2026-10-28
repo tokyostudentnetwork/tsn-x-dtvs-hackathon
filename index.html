@@ -118,107 +118,109 @@
 		<section class="type-article">
 			<div class="container article-schedule"> <!-- Schedule Section -->
 				<h2>Schedule</h2>
-				<div id="day-selection"> <!-- Day Selection Buttons. Will impliment later -->
-					<button class="day-button" data-day="1">Day 1</button>
-					<button class="day-button" data-day="2">Day 2</button>
-				</div>
 				<div id="schedule-tables"> <!-- Schedule Tables - Both are to be in HTML and to be done later -->
-					<table id="day-1-schedule" class="schedule-table">
-						<thead>
-							<tr>
-								<th>Time</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>9:00 - 10:00</td>
-								<td>Day 1 Check In</td>
-							</tr>
-							<tr>
-								<td>10:00 - 10:30</td>
-								<td>Opening Ceremony, Challenge Brief, & Team Formation</td>
-							</tr>
-							<tr>
-								<td>10:30 - 11:30</td>
-								<td>Workshop 1: Consulting Fundamentals and Case Analysis</td>
-							</tr>
-							<tr>
-								<td>11:30 - 13:00 (1:00pm)</td>
-								<td>Brainstorming & Concept Development Time</td>
-							</tr>
-							<tr>
-								<td>13:00 (1:00pm) - 14:00 (2:00pm)</td>
-								<td>Lunch Break</td>
-							</tr>
-							<tr>
-								<td>14:00 (2:00pm) - 15:00 (3:00pm)</td>
-								<td>Workshop 2: Solution Design</td>
-							</tr>
-							<tr>
-								<td>15:00 (3:00pm) - 17:00 (5:00pm)</td>
-								<td>Desginated Work Time</td>
-							</tr>
-							<tr>
-								<td>17:00 (5:00pm) - 17:15 (5:15pm)</td>
-								<td>Day 1 Submission Window</td>
-							</tr>
-							<tr>
-								<td>17:15 (5:15pm) - 20:45 (8:45pm)</td>
-								<td>Pitches & Presentations</td>
-							</tr>
-							<tr>
-								<td>20:45 (8:45pm) - 21:00 (9:00pm)</td>
-								<td>Day 1 Wrap Up</td>
-							</tr>
-						</tbody>
-					</table>
-					<table id="day-2-schedule" class="schedule-table">
-						<thead>
-							<tr>
-								<th>Time</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>9:00 - 10:00</td>
-								<td>Day 2 Check In</td>
-							</tr>
-							<tr>
-								<td>10:00 - 13:00 (1:00pm)</td>
-								<td>Desginated Work Time</td>
-							</tr>
-							<tr>
-								<td>13:00 (1:00pm) - 14:00 (2:00pm)</td>
-								<td>Lunch Break</td>
-							</tr>
-							<tr>
-								<td>14:00 (2:00pm) - 16:45 (4:45pm)</td>
-								<td>Desginated Work Time</td>
-							</tr>
-							<tr>
-								<td>16:45 (4:45pm) - 17:00 (5:00pm)</td>
-								<td>Day 2 Submission Window</td>
-							</tr>
-							<tr>
-								<td>17:00 (5:00pm) - 19:30 (7:30pm)</td>
-								<td>Pitches & Presentations</td>
-							</tr>
-							<tr>
-								<td>19:30 (7:30pm) - 20:00 (8:00pm)</td>
-								<td>Award Ceremony & Closing Remarks</td>
-							</tr>
-							<tr>
-								<td>20:00 (8:00pm) - 20:45 (8:45pm)</td>
-								<td>Networking</td>
-							</tr>
-							<tr>
-								<td>20:45 (8:45pm) - 21:00 (9:00pm)</td>
-								<td>Day 2 Wrap Up & Event End</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="schedule-table-container day-1">
+						<table class="schedule-table day-1">
+							<caption>Day 1</caption>
+							<thead>
+								<tr>
+									<th>Time</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>09:00 am - 10:00 am</td>
+									<td>Day 1 Check In</td>
+								</tr>
+								<tr>
+									<td>10:00 am - 10:30 am</td>
+									<td>Opening Ceremony, Challenge Brief, & Team Formation</td>
+								</tr>
+								<tr>
+									<td>10:30 am - 11:30 am</td>
+									<td>Workshop 1: Consulting Fundamentals and Case Analysis</td>
+								</tr>
+								<tr>
+									<td>11:30 am - 01:00 pm</td>
+									<td>Brainstorming & Concept Development Time</td>
+								</tr>
+								<tr>
+									<td>01:00 pm - 02:00 pm</td>
+									<td>Lunch Break</td>
+								</tr>
+								<tr>
+									<td>02:00 pm - 03:00 pm</td>
+									<td>Workshop 2: Solution Design</td>
+								</tr>
+								<tr>
+									<td>03:00 pm - 05:00 pm</td>
+									<td>Desginated Work Time</td>
+								</tr>
+								<tr>
+									<td>05:00 pm - 05:15pm</td>
+									<td>Day 1 Submission Window</td>
+								</tr>
+								<tr>
+									<td>05:15pm - 08:45 pm</td>
+									<td>Pitches & Presentations</td>
+								</tr>
+								<tr>
+									<td>08:45 pm - 09:00 pm</td>
+									<td>Day 1 Wrap Up</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="schedule-table-container day-2">
+						<table class="schedule-table day-2">
+							<caption>Day 2</caption>
+							<thead>
+								<tr>
+									<th>Time</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>09:00 am - 10:00 am</td>
+									<td>Day 2 Check In</td>
+								</tr>
+								<tr>
+									<td>10:00 am - 01:00 pm</td>
+									<td>Desginated Work Time</td>
+								</tr>
+								<tr>
+									<td>01:00 pm - 02:00 pm</td>
+									<td>Lunch Break</td>
+								</tr>
+								<tr>
+									<td>02:00 pm - 04:45 pm</td>
+									<td>Desginated Work Time</td>
+								</tr>
+								<tr>
+									<td>04:45 pm - 05:00 pm</td>
+									<td>Day 2 Submission Window</td>
+								</tr>
+								<tr>
+									<td>05:00 pm - 07:30 pm</td>
+									<td>Pitches & Presentations</td>
+								</tr>
+								<tr>
+									<td>07:30 pm - 08:00 pm</td>
+									<td>Award Ceremony & Closing Remarks</td>
+								</tr>
+								<tr>
+									<td>08:00 pm - 08:45 pm</td>
+									<td>Networking</td>
+								</tr>
+								<tr>
+									<td>08:45 pm - 09:00 pm</td>
+									<td>Day 2 Wrap Up & Event End</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -264,7 +266,8 @@
 							Tokyo to develop practical skills, connect with people beyond their campus, and explore
 							career and industry opportunities.</p>
 						<div class="org-button org-button-div">
-							<a class="org-button" href="https://www.instagram.com/nextsteptokyo/" target="_blank">See more</a>
+							<a class="org-button" href="https://www.instagram.com/nextsteptokyo/" target="_blank">See
+								more</a>
 						</div>
 					</div>
 				</div>
