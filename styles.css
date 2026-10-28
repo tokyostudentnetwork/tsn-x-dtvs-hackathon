@@ -8,7 +8,7 @@
   --text-color: #000000;
   --background-color: #f2f0f0;
   color-scheme: light dark;
-  --logo-gap : 36px;
+  --logo-gap: 36px;
 }
 
 /* ================================= */
@@ -139,8 +139,7 @@ div.hero p {
   margin-bottom: 3px;
 }
 
-.hero-logo-icon
-{
+.hero-logo-icon {
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -179,10 +178,16 @@ div.hero .hero-logo-icon {
 .register-button:focus-visible {
   outline: 2px solid #ff0808;
 }
+
 /* ================================= */
 
 
 /* Info and Image Box Styles */
+#body-nstlogo img {
+  width: auto;
+  border-radius: 16px;
+}
+
 .info-and-image-box {
   display: flex;
   flex-direction: row;
@@ -296,23 +301,27 @@ footer .container {
 }
 
 @media (max-width: 600px) {
-  div.hero h1
-  {
+  div.hero h1 {
     font-size: 3em;
   }
+
   .logo-card {
     flex-basis: 100%;
   }
 }
 
 @keyframes info-highlight {
-  0%, 40% {
+
+  0%,
+  40% {
     background-color: color-mix(in srgb, var(--primary-color) 40%, transparent);
     box-shadow: 0 0 0 12px color-mix(in srgb, var(--primary-color) 40%, transparent);
   }
+
   100% {
     background-color: transparent;
     box-shadow: 0 0 0 12px transparent;
   }
 }
+
 /* ================================= */
