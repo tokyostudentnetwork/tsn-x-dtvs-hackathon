@@ -41,6 +41,11 @@ svg {
   text-shadow: none;
 }
 
+thead ::selection {
+  background: rgb(255, 252, 252);
+  text-shadow: none;
+}
+
 ::selection {
   background: #fcc6138c;
   text-shadow: none;
