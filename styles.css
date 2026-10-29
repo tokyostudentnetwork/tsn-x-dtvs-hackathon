@@ -233,10 +233,17 @@ div.schedule-table-container {
   -webkit-overflow-scrolling: touch;
 }
 
-
 #body-nstlogo img {
   width: auto;
   border-radius: 16px;
+}
+
+section.type-article li {
+  margin-bottom: 8px;
+}
+
+span.list-bold {
+  font-weight: bold;
 }
 
 .info-and-image-box {
