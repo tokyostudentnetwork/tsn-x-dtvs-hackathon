@@ -1,0 +1,372 @@
+/* CSS Document for TSN x DTVS Hackathon Website */
+
+:root {
+  --primary-color: #FCC613;
+  --secondary-color: #141fb4;
+  --text-color: #000000;
+  --background-color: #f2f0f0;
+  color-scheme: light dark;
+  --logo-gap: 36px;
+}
+
+@font-face {
+  /* Note: No italics are in this font */
+  font-family: "Inter";
+  src: url("assets/Inter-4.1/web/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font: 1em Inter, sans-serif;
+  scroll-behavior: smooth;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.footer-banner ::selection {
+  background: rgb(255, 252, 252);
+  text-shadow: none;
+}
+
+thead ::selection {
+  background: rgb(255, 252, 252);
+  text-shadow: none;
+}
+
+::selection {
+  background: #fcc6138c;
+  text-shadow: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+section>.container {
+  padding: 5px 20px;
+}
+
+.type-article {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.type-article h2 {
+  font-size: 2em;
+}
+
+.logo-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--logo-gap);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logo-card {
+  flex: 0 0 calc((100% - var(--logo-gap)) / 2);
+  padding: 16px;
+  background-color: white;
+  border-radius: 24px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.logo-card img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+}
+
+.logo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+
+section.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.786)), url("images/TSNxDTVS-Hackathon_Landing-Page_Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+}
+
+div.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.hero h1 {
+  color: var(--primary-color);
+  font-size: 4.5em;
+  margin-bottom: 20px;
+}
+
+
+div.hero p {
+  color: white;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.hero-logo-icon {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+#hero-tsnlogo img {
+  width: auto;
+  border-radius: 16px;
+}
+
+.deloitte-hero-img {
+  transform: scale(1.4);
+}
+
+.register-button {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 1.4em;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.register-button:focus-visible {
+  outline: 2px solid #ff0808;
+}
+
+
+table {
+  table-layout: fixed;
+  width: 90%;
+  min-width: 600px;
+  margin: 10px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: var(--background-color);
+}
+
+th,
+td {
+  padding: 0.6em;
+  word-wrap: break-word;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: var(--primary-color);
+  color: black;
+}
+
+thead th:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+thead th:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.8em;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-color) 15%, transparent);
+  margin-bottom: 24px;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: color-mix(in srgb, var(--text-color) 10%, transparent);
+}
+
+tbody tr:nth-child(even) td:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+tbody tr:nth-child(even) td:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+div.schedule-table-container {
+  max-width: 800px;
+  margin-bottom: 48px;
+  overflow-x: auto;
+}
+
+#body-nstlogo img {
+  width: auto;
+  border-radius: 16px;
+}
+
+section.type-article li {
+  margin-bottom: 8px;
+}
+
+span.list-bold {
+  font-weight: bold;
+}
+
+.info-and-image-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  scroll-margin-top: 68px;
+  scroll-margin-bottom: 16px;
+  border-radius: 26px;
+}
+
+.info-and-image-box-target {
+  border-radius: 8px;
+}
+
+.info-and-image-box-target:target {
+  animation: info-highlight 5s ease-out;
+}
+
+.info-and-image-box-content {
+  flex: 1;
+}
+
+.info-and-image-box+.info-and-image-box {
+  border-top: 1px solid color-mix(in srgb, var(--text-color) 15%, transparent);
+  margin-top: 24px;
+  padding-top: 24px;
+  margin-bottom: 8px;
+}
+
+.third-party-logo {
+  max-width: 144px;
+  height: 144px;
+}
+
+.bad-logo {
+  border-radius: 16px;
+  border: var(--text-color) solid 2px;
+}
+
+.org-button {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 1.2em;
+  text-decoration: none;
+  max-width: fit-content;
+  transition: opacity 0.25s ease;
+}
+
+.org-button:hover {
+  opacity: 0.75;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.org-button:focus-visible {
+  outline: 2px solid #ff0808;
+}
+
+div.article-organizers {
+  padding-bottom: 48px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.footer-social-icons {
+  padding-left: 24px;
+  padding-right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social-icons a:hover {
+  opacity: 0.65;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .register-button {
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  div.hero h1 {
+    font-size: 3em;
+  }
+
+  .logo-card {
+    flex-basis: 100%;
+  }
+}
+
+@keyframes info-highlight {
+
+  0%,
+  40% {
+    background-color: color-mix(in srgb, var(--primary-color) 40%, transparent);
+    box-shadow: 0 0 0 12px color-mix(in srgb, var(--primary-color) 40%, transparent);
+  }
+
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 0 12px transparent;
+  }
+}
