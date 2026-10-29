@@ -1,7 +1,5 @@
 /* CSS Document for TSN x DTVS Hackathon Website */
 
-
-/* Define CSS Variables for colors and fonts */
 :root {
   --primary-color: #FCC613;
   --secondary-color: #141fb4;
@@ -11,10 +9,7 @@
   --logo-gap: 36px;
 }
 
-/* ================================= */
 
-
-/* Reset some default styles */
 html,
 body {
   margin: 0;
@@ -32,10 +27,7 @@ svg {
   box-sizing: border-box;
 }
 
-/* ================================= */
 
-
-/* Selection Styles */
 .footer-banner ::selection {
   background: rgb(255, 252, 252);
   text-shadow: none;
@@ -50,10 +42,7 @@ html:focus-visible {
   outline: 2px solid var(--secondary-color);
 }
 
-/* ================================= */
 
-
-/* General Styles */
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -107,10 +96,7 @@ section>.container {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* ================================= */
 
-
-/* Top Banner / Hero Styles */
 section.hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.786)), url("images/TSNxDTVS-Hackathon_Landing-Page_Banner.jpg");
   background-size: cover;
@@ -179,10 +165,6 @@ div.hero .hero-logo-icon {
   outline: 2px solid #ff0808;
 }
 
-/* ================================= */
-
-
-/* Table Styles */
 
 table {
   table-layout: fixed;
@@ -244,9 +226,7 @@ div.schedule-table-container {
   -webkit-overflow-scrolling: touch;
 }
 
-/* ================================= */
 
-/* Info and Image Box Styles */
 #body-nstlogo img {
   width: auto;
   border-radius: 16px;
@@ -316,9 +296,6 @@ div.article-organizers {
   padding-bottom: 48px;
 }
 
-/* ================================= */
-
-/* Footer Styles */
 footer {
   background-color: var(--primary-color);
   color: black;
@@ -347,10 +324,7 @@ footer .container {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* ================================ */
 
-
-/* Media Queries for Light and Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1a1a1a;
@@ -387,5 +361,3 @@ footer .container {
     box-shadow: 0 0 0 12px transparent;
   }
 }
-
-/* ================================= */
