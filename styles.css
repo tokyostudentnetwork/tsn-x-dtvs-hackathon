@@ -9,7 +9,8 @@
   --logo-gap: 36px;
 }
 
-@font-face { /* Note: No italics are in this font */
+@font-face {
+  /* Note: No italics are in this font */
   font-family: "Inter";
   src: url("assets/Inter-4.1/web/InterVariable.woff2") format("woff2");
   font-weight: 100 900;
@@ -44,11 +45,6 @@ svg {
   background: #fcc6138c;
   text-shadow: none;
 }
-
-html:focus-visible {
-  outline: 2px solid var(--secondary-color);
-}
-
 
 .container {
   max-width: 1240px;
@@ -146,10 +142,6 @@ div.hero p {
   transform: scale(1.4);
 }
 
-div.hero .hero-logo-icon {
-  overflow: hidden;
-}
-
 .register-button {
   background-color: var(--primary-color);
   border-radius: 10px;
@@ -158,7 +150,6 @@ div.hero .hero-logo-icon {
   padding: 12px 24px;
   font-size: 1.4em;
   text-decoration: none;
-  display: inline-block;
   transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
 }
 
@@ -206,7 +197,6 @@ thead th:last-child {
 }
 
 caption {
-  caption-side: top;
   text-align: left;
   font-weight: bold;
   font-size: 1.8em;
@@ -230,7 +220,6 @@ div.schedule-table-container {
   max-width: 800px;
   margin-bottom: 48px;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 #body-nstlogo img {
@@ -297,7 +286,7 @@ span.list-bold {
   max-width: fit-content;
 }
 
-.org-button:hover a:hover {
+.org-button a:hover {
   opacity: 0.65;
   transition: opacity 0.3s ease-in-out;
 }
