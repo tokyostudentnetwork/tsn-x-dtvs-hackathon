@@ -147,6 +147,13 @@ div.hero p {
   transform: scale(1.4);
 }
 
+.hero-button-container {
+  margin: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
 .register-button {
   background-color: var(--primary-color);
   border-radius: 10px;
@@ -168,7 +175,26 @@ div.hero p {
   outline: 2px solid #ff0808;
 }
 
+.access-button {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 1.4em;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
 
+.access-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.access-button:focus-visible {
+  outline: 2px solid #ff0808;
+}
 table {
   table-layout: fixed;
   width: 90%;
