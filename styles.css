@@ -365,7 +365,7 @@ footer .container {
   transition: opacity 0.3s ease-in-out;
 }
 
-.header-container {
+.access-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -374,6 +374,45 @@ footer .container {
   color: black;
 }
 
+.access-header-text-space {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #000000;
+}
+
+.access-header-logo-icon {
+  color: inherit;
+  text-decoration: none;
+}
+
+.access-header-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 500px;
+  padding: 0 20px 0 max(20px, calc((100% - 1240px) / 2 + 20px));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.786)), url("images/access-temp.png");
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+
+.access-main {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.access-header-image-text {
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: black;
+  border-radius: 24px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
