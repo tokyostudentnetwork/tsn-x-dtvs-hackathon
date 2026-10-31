@@ -227,6 +227,12 @@ div.schedule-table-container {
   overflow-x: auto;
 }
 
+tr:hover {
+  transition: background-color 0.25s ease;
+  background-color: color-mix(in srgb, var(--primary-color) 40%, transparent);
+  text-shadow: none;
+}
+
 #body-nstlogo img {
   width: auto;
   border-radius: 16px;
