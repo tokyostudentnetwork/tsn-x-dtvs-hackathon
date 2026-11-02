@@ -414,6 +414,14 @@ footer .container {
   padding-right: 4px;
 }
 
+.access-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1a1a1a;
