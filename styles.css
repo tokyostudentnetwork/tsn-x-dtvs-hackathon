@@ -147,6 +147,13 @@ div.hero p {
   transform: scale(1.4);
 }
 
+.hero-button-container {
+  margin: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
 .register-button {
   background-color: var(--primary-color);
   border-radius: 10px;
@@ -168,7 +175,26 @@ div.hero p {
   outline: 2px solid #ff0808;
 }
 
+.access-button {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 1.4em;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
 
+.access-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.access-button:focus-visible {
+  outline: 2px solid #ff0808;
+}
 table {
   table-layout: fixed;
   width: 90%;
@@ -225,6 +251,12 @@ div.schedule-table-container {
   max-width: 800px;
   margin-bottom: 48px;
   overflow-x: auto;
+}
+
+tr:hover {
+  transition: background-color 0.25s ease;
+  background-color: color-mix(in srgb, var(--primary-color) 40%, transparent);
+  text-shadow: none;
 }
 
 #body-nstlogo img {
@@ -333,6 +365,90 @@ footer .container {
   transition: opacity 0.3s ease-in-out;
 }
 
+.access-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.access-header-text-space {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #000000;
+}
+
+.access-header-logo-icon {
+  color: inherit;
+  text-decoration: none;
+}
+
+.access-header-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 500px;
+  padding: 0 20px 0 max(20px, calc((100% - 1240px) / 2 + 20px));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.786)), url("images/access-temp.png");
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+
+.access-main {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.access-header-image-text {
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: black;
+  border-radius: 24px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.access-map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.access-figure {
+  margin: 24px 0;
+}
+
+.access-figure-caption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  text-align: center;
+  color: color-mix(in srgb, var(--text-color) 70%, transparent);
+}
+
+.access-home-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.access-home-button {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 1.4em;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
