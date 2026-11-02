@@ -433,6 +433,23 @@ footer .container {
   color: color-mix(in srgb, var(--text-color) 70%, transparent);
 }
 
+.access-home-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.access-home-button {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 1.4em;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1a1a1a;
