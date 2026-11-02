@@ -414,12 +414,23 @@ footer .container {
   padding-right: 4px;
 }
 
-.access-container img {
+.access-map-image {
   display: block;
   width: 100%;
   height: auto;
   margin: 0 auto;
   border-radius: 16px;
+}
+
+.access-figure {
+  margin: 24px 0;
+}
+
+.access-figure-caption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  text-align: center;
+  color: color-mix(in srgb, var(--text-color) 70%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
