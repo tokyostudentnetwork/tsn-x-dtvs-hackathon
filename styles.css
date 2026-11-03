@@ -7,6 +7,7 @@
   --background-color: #f2f0f0;
   color-scheme: light dark;
   --logo-gap: 36px;
+  --logo-card-width: 282px;
 }
 
 @font-face {
@@ -75,12 +76,19 @@ section>.container {
   justify-content: center;
   gap: var(--logo-gap);
   width: 100%;
-  max-width: 600px;
+  /* Hero: 2 cards per row */
+  max-width: calc(2 * var(--logo-card-width) + var(--logo-gap));
   margin: 0 auto;
 }
 
+/* Partners: 3 cards per row (5 logos wrap to 3 + 2) */
+.billboard-space {
+  max-width: calc(3 * var(--logo-card-width) + 2 * var(--logo-gap));
+}
+
 .logo-card {
-  flex: 0 0 calc((100% - var(--logo-gap)) / 2);
+  /* Fixed width so hero and partner cards always match */
+  flex: 0 1 var(--logo-card-width);
   padding: 16px;
   background-color: white;
   border-radius: 24px;
@@ -104,9 +112,8 @@ section>.container {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
-
 section.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.786)), url("images/TSNxDTVS-Hackathon_Landing-Page_Banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.786)), url("images/TSNxDTVS-Hackathon_Landing-Page_Banner.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,6 +202,11 @@ div.hero p {
 .access-button:focus-visible {
   outline: 2px solid #ff0808;
 }
+
+a.access-button {
+  margin-bottom: 24px;
+}
+
 table {
   table-layout: fixed;
   width: 90%;
@@ -472,6 +484,7 @@ footer .container {
     flex-basis: 100%;
   }
 }
+
 
 @keyframes info-highlight {
 
