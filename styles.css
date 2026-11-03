@@ -106,7 +106,7 @@ section>.container {
 
 
 section.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.786)), url("images/TSNxDTVS-Hackathon_Landing-Page_Banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.786)), url("images/TSNxDTVS-Hackathon_Landing-Page_Banner.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
