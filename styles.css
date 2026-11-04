@@ -76,18 +76,11 @@ section>.container {
   justify-content: center;
   gap: var(--logo-gap);
   width: 100%;
-  /* Hero: 2 cards per row */
-  max-width: calc(2 * var(--logo-card-width) + var(--logo-gap));
+  max-width: calc(3 * var(--logo-card-width) + 2 * var(--logo-gap));
   margin: 0 auto;
 }
 
-/* Partners: 3 cards per row (5 logos wrap to 3 + 2) */
-.billboard-space {
-  max-width: calc(3 * var(--logo-card-width) + 2 * var(--logo-gap));
-}
-
 .logo-card {
-  /* Fixed width so hero and partner cards always match */
   flex: 0 1 var(--logo-card-width);
   padding: 16px;
   background-color: white;
