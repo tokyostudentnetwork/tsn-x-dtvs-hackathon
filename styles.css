@@ -317,6 +317,13 @@ span.list-bold {
   border: var(--text-color) solid 2px;
 }
 
+.wide-logo {
+  width: 144px;
+  object-fit: contain;
+  background-color: white;
+  padding: 12px;
+}
+
 .org-button {
   background-color: var(--primary-color);
   border-radius: 8px;
