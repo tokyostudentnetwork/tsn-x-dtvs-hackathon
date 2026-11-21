@@ -280,7 +280,6 @@ span.list-bold {
 .info-and-image-box {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   gap: 20px;
   scroll-margin-top: 68px;
