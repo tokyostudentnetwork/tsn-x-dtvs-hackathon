@@ -224,6 +224,10 @@ th {
   color: black;
 }
 
+.time-cell {
+  font-family: "Lucida Console";
+}
+
 thead th:first-child {
   border-radius: 12px 0 0 12px;
 }
