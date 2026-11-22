@@ -225,7 +225,7 @@ th {
 }
 
 .time-cell {
-  font-family: "Lucida Console";
+  font-variant-numeric: tabular-nums;
 }
 
 thead th:first-child {
